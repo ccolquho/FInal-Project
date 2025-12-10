@@ -1,0 +1,193 @@
+/*Author: Christian Colquhoun
+Date: December 9th, 2025*/
+@import url(../css/fonts.css);
+html {
+  background-color: black;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.box {
+  flex: none;
+  width: 90%;
+  max-width: 90%;
+  flex-direction: column;
+  position: relative;
+  padding-top: 5px;
+  margin-top: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+#info {
+  justify-self: center;
+  margin-bottom: 50px;
+  max-width: 100%;
+}
+
+#info p {
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+p {
+  font-family: Source-Code;
+}
+
+h1 {
+  color: white;
+  font-family: Source-Code;
+  font-weight: bolder;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-family: Source-Code;
+}
+
+#gameImg {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  justify-self: center;
+  align-self: center;
+}
+
+#wordDisplay {
+  color: white;
+  justify-self: center;
+  font-size: 32px;
+  font-family: Source-Code;
+}
+
+#status {
+  color: white;
+  justify-self: center;
+  font-size: 24px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#lettersWrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-self: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 70%;
+  margin-bottom: 20px;
+  border: solid white 2px;
+  padding: 20px;
+  font-family: Source-Code;
+}
+
+#lettersWrap p {
+  margin: 0;
+  transition: color 0.2s ease-in-out;
+  font-family: Source-Code;
+}
+
+.unselected {
+  color: white;
+  font-size: 32px;
+  font-family: Source-Code;
+}
+
+.selectedCorrect {
+  color: green;
+  font-size: 32px;
+  font-family: Source-Code;
+}
+
+.selectedWrong {
+  color: red;
+  font-size: 32px;
+  font-family: Source-Code;
+}
+
+#hint {
+  color: white;
+  justify-self: center;
+  font-family: Source-Code;
+}
+
+#inputWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 10px;
+  font-family: Source-Code;
+}
+
+#inputBoxWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-family: Source-Code;
+}
+
+#letterInput {
+  max-width: 40px;
+  height: auto;
+  background-color: black;
+  border: solid white 2px;
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  font-family: Source-Code;
+}
+
+#checkInput {
+  width: 100px;
+}
+
+@media (min-width: 1080px) {
+  #wordDisplay {
+    color: white;
+    justify-self: center;
+    font-size: 32px;
+    font-family: Source-Code;
+  }
+  #wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 100px;
+    padding: 20px;
+  }
+  .box {
+    flex: 0 1 45%;
+    position: relative;
+    padding-top: 5px;
+    margin-top: 0px;
+  }
+}

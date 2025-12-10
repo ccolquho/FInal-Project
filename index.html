@@ -1,0 +1,81 @@
+ <!--Author: Christian Colquhoun; A00988686
+    Date: December X, 2025-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>COMP2132 Hangman</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="./scripts/hangman.js" defer></script>
+
+    </head>
+    <body>
+        
+        <header>
+            <h1>SAVE THE CHINCHILLA!</h1>
+        </header>
+        <main>
+        <div id="wrapper">
+        
+        <div class="box">
+            <img id="gameImg" src="">
+        </div>
+        <div class="box">
+            <div id="info">
+            <p>This Chinchilla is STARVING.</p>
+            <p>He found a chest of food, but it requires a password to unlock. He also noticed a carrot that had been dropped off a cliff.
+            <p>Guess the letters to the password to get into the chest, or watch the Chinchilla risk it all for the carrot!</p>
+            </div>
+            <h2>Guessed Letters:</h2>
+            <div id ="lettersWrap">
+                <p class="unselected" id="a">A</p>
+                <p class="unselected" id="b">B</p>
+                <p class="unselected" id="c">C</p>
+                <p class="unselected" id="d">D</p>
+                <p class="unselected" id="e">E</p>
+                <p class="unselected" id="f">F</p>
+                <p class="unselected" id="g">G</p>
+                <p class="unselected" id="h">H</p>
+                <p class="unselected" id="i">I</p>
+                <p class="unselected" id="j">J</p>
+                <p class="unselected" id="k">K</p>
+                <p class="unselected" id="l">L</p>
+                <p class="unselected" id="m">M</p>
+                <p class="unselected" id="n">N</p>
+                <p class="unselected" id="o">O</p>
+                <p class="unselected" id="p">P</p>
+                <p class="unselected" id="q">Q</p>
+                <p class="unselected" id="r">R</p>
+                <p class="unselected" id="s">S</p>
+                <p class="unselected" id="t">T</p>
+                <p class="unselected" id="u">U</p>
+                <p class="unselected" id="v">V</p>
+                <p class="unselected" id="w">W</p>
+                <p class="unselected" id="x">X</p>
+                <p class="unselected" id="y">Y</p>
+                <p class="unselected" id="z">Z</p>
+            </div>
+            <p id="hint"></p>
+            <p id="wordDisplay"></p>
+            
+            <div id ="inputWrapper">
+                
+                <div id ="inputBoxWrapper">
+                <input type="text" id="letterInput" maxlength="1">
+                <button id = "checkInput"></button>
+                </div>
+                <p id ="status"></p>
+            </div>
+            </div>    
+        </div>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+
+
+
+</html>
